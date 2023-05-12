@@ -1,8 +1,8 @@
 //your code here
-let text=document.getElementById('eveluatedText').value;
-text.addEventListner('onChange',counting);
+let text=document.getElementById('eveluatedText');
+text.addEventListner('keyup',counting);
 function counting(){
-		
-	document.getElementById('letterCount').innerText=text.length;
+
+document.getElementById('letterCount').innerText=text.value.length;
 }
 
