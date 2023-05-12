@@ -1,8 +1,10 @@
 //your code here
-let text=document.getElementById('eveluatedText');
-text.addEventListner('keyup',counting);
+let input = document.getElementById("evaluatedText")
+let h3 = document.getElementById("letterCount")
+
+input.addEventListner('keyup',counting);
 function counting(){
 
-document.getElementById('letterCount').innerText=text.value.length;
+h3.innerText=input.value.length;
 }
 
